@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Code CSS Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="testcntr" class="start">
+      <div class="panel">
+        <div class="inner">
+          <h1>CSS Test</h1>
+          <p>
+            Using CSS only, restyle this page to look like the following:
+            <a href="alternate.jpg" target="_blank" class="preview"
+              >alternate</a
+            >
+            |
+            <a href="circular.jpg" target="_blank" class="preview">circular</a>
+          </p>
+          <p>
+            Only modify &quot;styles.css&quot;. We`re particularly interested in
+            how you incorporate changes into existing styles.
+          </p>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="inner inner2">
+          <ul class="cards">
+            <li>
+              <a href="#">
+                <span
+                  class="image"
+                  style="
+                    background-image: url(https://api.pseudocode.com.au/imgsrc/?r=1);
+                  "
+                ></span>
+                <span class="content">
+                  <span class="date">21st July 2022</span>
+                  <span class="title">Card Title</span>
+                  <span class="description"
+                    >Donec rutrum congue leo eget malesuada. Nulla porttitor
+                    accumsan tincidunt. Nulla porttitor accumsan tincidunt.
+                    Vestibulum ac diam sit amet quam vehicula elementum sed sit
+                    amet dui. Curabitur non nulla sit amet nisl tempus convallis
+                    quis ac lectus.</span
+                  >
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span
+                  class="image"
+                  style="
+                    background-image: url(https://api.pseudocode.com.au/imgsrc/?r=2);
+                  "
+                ></span>
+                <span class="content">
+                  <span class="date">21st July 2022</span>
+                  <span class="title">Card Title</span>
+                  <span class="description"
+                    >Donec rutrum congue leo eget malesuada. Nulla porttitor
+                    accumsan tincidunt. Nulla porttitor accumsan tincidunt.
+                    Vestibulum ac diam sit amet quam vehicula elementum sed sit
+                    amet dui. Curabitur non nulla sit amet nisl tempus convallis
+                    quis ac lectus.</span
+                  >
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span
+                  class="image"
+                  style="
+                    background-image: url(https://api.pseudocode.com.au/imgsrc/?r=3);
+                  "
+                ></span>
+                <span class="content">
+                  <span class="date">21st July 2022</span>
+                  <span class="title">Card Title</span>
+                  <span class="description"
+                    >Donec rutrum congue leo eget malesuada. Nulla porttitor
+                    accumsan tincidunt. Nulla porttitor accumsan tincidunt.
+                    Vestibulum ac diam sit amet quam vehicula elementum sed sit
+                    amet dui. Curabitur non nulla sit amet nisl tempus convallis
+                    quis ac lectus.</span
+                  >
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span
+                  class="image"
+                  style="
+                    background-image: url(https://api.pseudocode.com.au/imgsrc/?r=4);
+                  "
+                ></span>
+                <span class="content">
+                  <span class="date">21st July 2022</span>
+                  <span class="title">Card Title</span>
+                  <span class="description"
+                    >Donec rutrum congue leo eget malesuada. Nulla porttitor
+                    accumsan tincidunt. Nulla porttitor accumsan tincidunt.
+                    Vestibulum ac diam sit amet quam vehicula elementum sed sit
+                    amet dui. Curabitur non nulla sit amet nisl tempus convallis
+                    quis ac lectus.</span
+                  >
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span
+                  class="image"
+                  style="
+                    background-image: url(https://api.pseudocode.com.au/imgsrc/?r=5);
+                  "
+                ></span>
+                <span class="content">
+                  <span class="date">21st July 2022</span>
+                  <span class="title">Card Title</span>
+                  <span class="description"
+                    >Donec rutrum congue leo eget malesuada. Nulla porttitor
+                    accumsan tincidunt. Nulla porttitor accumsan tincidunt.
+                    Vestibulum ac diam sit amet quam vehicula elementum sed sit
+                    amet dui. Curabitur non nulla sit amet nisl tempus convallis
+                    quis ac lectus.</span
+                  >
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span
+                  class="image"
+                  style="
+                    background-image: url(https://api.pseudocode.com.au/imgsrc/?r=6);
+                  "
+                ></span>
+                <span class="content">
+                  <span class="date">21st July 2022</span>
+                  <span class="title">Card Title</span>
+                  <span class="description"
+                    >Donec rutrum congue leo eget malesuada. Nulla porttitor
+                    accumsan tincidunt. Nulla porttitor accumsan tincidunt.
+                    Vestibulum ac diam sit amet quam vehicula elementum sed sit
+                    amet dui. Curabitur non nulla sit amet nisl tempus convallis
+                    quis ac lectus.</span
+                  >
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="preview" class="hidden">
+      <i class="close fa fa-times"></i>
+      <div class="content"></div>
+    </div>
+    <script>
+      let closelinks = document.querySelectorAll("#preview .close");
+      let previewlinks = document.querySelectorAll("a.preview");
+      previewlinks.forEach((a) => {
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          let imgurl = e.target.href;
+          let pvpane = document.getElementById("preview");
+          let ctpane = pvpane.querySelector(".content");
+          ctpane.style.backgroundImage = `url(${imgurl})`;
+          pvpane.classList.remove("hidden");
+        });
+      });
+      closelinks.forEach((a) => {
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          let pvpane = document.getElementById("preview");
+          let ctpane = pvpane.querySelector(".content");
+          ctpane.style.backgroundImage = "none";
+          pvpane.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
